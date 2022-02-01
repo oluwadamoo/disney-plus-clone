@@ -6,9 +6,12 @@ import Viewers from './Viewers';
 function Home() {
     return (
         <Container>
+            
             <ImageSlider />
-
+            
             <Viewers/>
+            
+            
         </Container>
     );
 }
@@ -20,6 +23,7 @@ const Container = styled.main`
     padding:0 calc(3.5vw + 5px);
     position: relative;
     overflow-x: hidden;
+    
     &:before{
         background: url("/images/home-background.png") center center /cover  no-repeat fixed;
         content:'';
@@ -28,6 +32,7 @@ const Container = styled.main`
         left: 0;
         right: 0;
         bottom: 0;
+        z-index: -1;
         
     }
     
