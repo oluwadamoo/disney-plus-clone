@@ -7,6 +7,7 @@ import {
   BrowserRouter as Router, Switch, Route, Link
 } from 'react-router-dom'
 import Detail from './components/Detail';
+import Login from './components/Login';
 
 
 function App() {
@@ -17,6 +18,9 @@ function App() {
         <Switch>
           <Route path="/detail">
             <Detail />
+          </Route>
+          <Route path="/login">
+            <Login />
           </Route>
 
           <Route exact path="/">
